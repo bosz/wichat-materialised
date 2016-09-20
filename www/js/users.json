@@ -1,0 +1,19 @@
+   [
+    { "title":"Collins",
+       "id": 1,
+       "status" : "free",
+       "pic": "collins.jpg"
+    },
+
+    {"title":"Francis",
+       "id": 2,
+       "status" : "busy",
+       "pic":"francis.jpg"
+     } ,
+
+    {"title":"Rash",
+      "id": 3,
+      "status": "sleeping",
+      "pic":"rash.jpg"
+    }
+]

@@ -1,0 +1,32 @@
+<ion-view  ng-controller="ChatCtrl" style="background: #f5f5f5;" view-title="Chat With {{users[whichUser].title}}">
+
+<ion-content ng-class="{expanded:isExpanded}"  >
+<div ng-repeat="chat in messages">
+    <div  ng-show="{{chat.status}} == 1" class="talk-bubble tri-right left-top">
+    <div class="talktext">
+      <p>{{chat.message}}</p>
+      <small>{{chat.time}}</small>
+    </div>
+  </div>
+
+  <div ng-show="{{chat.status}} == 0" class="talk-bubble-home tri-right btm-right">
+  <div class="talktext">
+    <p>{{chat.message}}
+    </p>
+       <small>{{chat.time}}</small>
+    </div>
+</div>
+</div>
+
+  </ion-content>
+
+<div class="item item-input-inset inputmessage messageInput">
+      <label class="item-input-wrapper textInput">
+         <input ng-model= "newMessage" type="text" placeholder="type ...">
+      </label>
+      <button ng-controller="ChatCtrl" ng-click="sendMessage()" class="button button-small button-positive icon ion-android-send">
+
+      </button>
+</div>
+
+</ion-view>

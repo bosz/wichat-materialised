@@ -1,0 +1,17 @@
+[
+    { "mention":"message",
+        "time": "     9:45",
+           "user": "Mendize",
+           "message":"Hello can we chat? ",
+           "pic":"mandize.jpg",
+           "num": 2
+        },
+
+        { "mention":"message",
+            "time":"   20:04",
+           "user": "Rash",
+           "message":"Hey hommie how far ?",
+           "pic":"fabrice.jpg",
+           "num": 5
+        }
+]

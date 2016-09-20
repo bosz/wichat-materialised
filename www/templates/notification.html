@@ -1,0 +1,16 @@
+<ion-view view-title="Notifications">
+    <ion-content ng-class="{expanded:isExpanded}" class="animate-fade-slide-in">
+
+ <ion-list ng-controller="NotificationCtrl" ng-repeat="info in infos">
+      <ion-item class="item-clear">
+          <a href="#app/chat/0" class="item item-avatar">
+            <img src="img/{{info.pic}}">
+           <pre> <strong class="pull-left positive">{{info.user}}</strong>   <strong class="assertive muted">{{info.time}}</strong></pre>
+              <span class="badge badge-assertive">{{info.num}}</span>
+        </a>
+
+           <p class="noti-text-message">{{info.message}}</p>
+      </ion-item>
+</ion-list>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,57 @@
+<ion-view view-title="Profile Settings">
+
+    <ion-content ng-class="{expanded:$scope.isExpanded}" >
+
+     <a href="">
+        <div class="hero slide-up" style="background-image: url('img/profile.jpg');">
+        </div>
+    </a>
+
+      <div class="content">
+
+      <div class="card">
+        <ion-list class="list-inset">
+          <ion-item class="item-toggle">
+              Visibility
+           <label class="toggle toggle-balanced">
+             <input type="checkbox">
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+        </ion-item>
+
+        <ion-item class="item-toggle">
+               Auto Connect
+           <label class="toggle toggle-balanced">
+             <input type="checkbox">
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+        </ion-item>
+
+        <ion-item class="item-input">
+          <span class="input-label dark">User Name:</span>
+          <input type="text" placeholder=" e.g     Joswag">
+        </ion-item>
+
+        <ion-item class="item-input">
+          <span class="input-label dark">Status:</span>
+          <input type="text" placeholder ="e.g     Am in Class">
+        </ion-item>
+
+        <ion-item class="item-input">
+          <span class="input-label dark">User ID:</span>
+          <input type="text" placeholder="e.g      josephsuh@gmail.com">
+        </ion-item>
+
+
+            <div class="button-bar spacing">
+                      <a  class="button button-positive" ng-click="saving()">Confirm</a>
+                      <a ui-sref="app.home" class="button button-assertive">Cancel</a>
+            </div>
+      </div>
+
+    </ion-content>
+</ion-view>

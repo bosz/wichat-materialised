@@ -1,0 +1,16 @@
+<ion-view view-title="Friends Online...">
+    <ion-content ng-class="{expanded:isExpanded}">
+        <div class="content has-header">
+
+          <div ng-controller="ChatlistCtrl">
+            <div ng-controller="ChatlistCtrl" class="list animate-fade-slide-in-right" ng-repeat="user in users" >
+                <a href="#/app/chat/{{users.indexOf(user)}}" class="item item-avatar item-icon-right">
+                    <img src="img/{{user.pic}}">
+                    <h2><pre>{{user.title}}      <strong class="stable muted">{{user.status}}</strong></pre></h2>
+                    <i class="icon ion-chatbubble muted"></i>
+                </a>
+            </div>
+           </div>
+        </div>
+    </ion-content>
+</ion-view>
